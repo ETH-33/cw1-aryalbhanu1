@@ -1,192 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hobbyists - Live Your Obsession</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multipage Blog Website</title>
+    <!-- CUSTOM STYLESHEET -->
+    <link rel="stylesheet" href="./style.css">
+<!-- ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">">
 </head>
-
 <body>
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html" class="nav_logo">EGATOR</a>
+            <ul class="nav_items">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">Signin</a></li>
+                <li class="nav_profile">
+                    <div class="avatar">
+                        <img src="./image/avatar1.jpg">
+                    </div>
+                </li>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Hobbyists</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about.html">About</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Hobbies
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Physical</a></li>
-              <li><a class="dropdown-item" href="#">Musical</a></li>
-              <li><a class="dropdown-item" href="#">Adventure</a></li>
-              <li><a class="dropdown-item" href="#">Creative/Craft</a></li>
-              <li><a class="dropdown-item" href="#">Food/Drink</a></li>
-              <li><a class="dropdown-item" href="#">Mental</a></li>
-              <li><a class="dropdown-item" href="#">Model/Woodworking</a></li>
-              <li><a class="dropdown-item" href="#">Gardening</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Write for us</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
 
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="image/8.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Welcome to Hobbyists!</h2>
-          <p>Art, Obsession and Fun</p>
-          <button class="btn btn-primary">Art</button>
-          <button class="btn btn-danger">Obsession</button>
-          <button class="btn btn-success">Fun</button>
+            <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+            <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/12.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Showcase your hobbies</h2>
-          <p>Art, Obsession and Fun</p>
-          <button class="btn btn-primary">Art</button>
-          <button class="btn btn-danger">Obsession</button>
-          <button class="btn btn-success">Fun</button>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/7.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Explore what you love!</h2>
-          <p>Art, Obsession and Fun</p>
-          <button class="btn btn-primary">Art</button>
-          <button class="btn btn-danger">Obsession</button>
-          <button class="btn btn-success">Fun</button>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <div class="container">
-
-    <div class="row justify-content-center">
-      <div class="col-md-4 mb-4">
-        <div class="row">
-          <div class="card custom-card" style="max-width: 300px;">
-            <div class="ratio ratio-4x3">
-              <video class="custom-video" controls style="width: 100%; height: 100%;">
-                <source src="videos/thumb1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Video 1</h5>
-              <p class="card-text">Description of the first video.</p>
-              <a href="#" class="btn btn-primary">Watch Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card custom-card" style="max-width: 300px;">
-          <div class="ratio ratio-4x3">
-            <video class="custom-video" controls>
-              <source src="videos/thumb2.mp4" type="video/mp4">
-
-            </video>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Video 2</h5>
-            <p class="card-text">Description of the second video.</p>
-            <a href="#" class="btn btn-primary">Watch Now</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card custom-card" style="max-width: 300px;">
-          <div class="ratio ratio-4x3">
-            <video class="custom-video" controls>
-              <source src="videos/thumb3.mp4" type="video/mp4">
-
-            </video>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Video 3</h5>
-            <p class="card-text">Description of the second video.</p>
-            <a href="#" class="btn btn-primary">Watch Now</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card custom-card" style="max-width: 300px;">
-          <div class="ratio ratio-4x3">
-            <video class="custom-video" controls>
-              <source src="videos/thumb4.mp4" type="video/mp4">
-
-            </video>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Video 4</h5>
-            <p class="card-text">Description of the second video.</p>
-            <a href="#" class="btn btn-primary">Watch Now</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-  </div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+    </nav>
+    <!-------END OF NAV------>
 </body>
-
 </html>
